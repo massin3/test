@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+    column-gap: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.inptnmbrbill{
+    width: 250px;
+    padding-left: 30px;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Arial',sans-serif;
+}
+.inptnmbrbill::before{
+    content:"$";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    color: #1b1b1b;
+}
+.inptnmbrbill::placeholder{
+    color: rgb(0, 78, 78);
+}
+.inptnmbrtip{
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+}
+.inptnmbrppl{
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.tipper{
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 5px;
+}
+.tipper button{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(2, 172, 135);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.tipper button:hover{
+    color: aqua;
+    background-color: rgb(0, 109, 85);
+}
+.input .custom{
+    background-color: azure;
+}
+.result{
+    padding: 10px;
+    background-color: rgb(0, 141, 110);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    overflow:hidden;
+}
+.rslttip, h2{
+    color: rgb(0, 226, 139);
+    font-size: 30px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+.resetbutton{
+    display: grid;
+    grid-template-columns: 1 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.rstbtn{
+    padding: 5px 80px;
+    background-color: rgb(0, 167, 117);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5 ease-in-out;
+}
+.rstbtn:hover{
+    background-color: beige;
+}

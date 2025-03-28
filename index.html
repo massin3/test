@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="input">
+          <label for=""><b>Bill</b></label
+          ><br />
+          <input type="number" placeholder="0" class="inptnmbrbill" /><br />
+          <label for=""><b>Select Tip %</b></label
+          ><br />
+          <input type="number" placeholder="0.0" class="inptnmbrtip" /><br />
+          <div class="tipper">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>20%</button>
+            <button>50%</button>
+            <button class="custom">Custom</button>
+          </div>
+          <label for=""><b>Number of People</b></label>
+          <input type="number" placeholder="1" class="inptnmbrppl" />
+        </div>
+        <div class="result">
+          <div class="info">
+            <div class="rsltinf">
+              <p class="tipamnt"><b>Tip Amount</b><br /><span>/person</span></p>
+              <br />
+              <p class="ttlamnt"><b>Total</b><br /><span>/person</span></p>
+            </div>
+            <div class="rslttip">
+              <h2 class="tip">$0.00</h2>
+              <br />
+              <h2 class="ttl">$0.00</h2>
+            </div>
+            <div class="resetbutton">
+              <div></div>
+              <button class="rstbtn">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
